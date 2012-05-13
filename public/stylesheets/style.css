@@ -156,7 +156,7 @@ header #tagline {
   padding: 20px 0px 20px 0px;
   width: 100%;
   background-image: url('./img/aboutbg.png');
-  box-shadow: inset 1px 1px 0px 5000px rgba(128, 73, 114, 0.85);
+  box-shadow: inset 1px 1px 0px 5000px rgba(128, 73, 114, 0.75);
   margin-top: 40px;
   border-top: 2px solid rgba(104, 59, 93, 1);
   border-bottom: 2px solid rgba(104, 59, 93, 1);
@@ -207,7 +207,7 @@ section#bio .social {
   height: 32px;
   width: 32px;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 9px;
   border-radius: 32px;
   cursor: pointer;
   -webkit-transition: background-color 0.3s, box-shadow 0.2s, -webkit-transform 0.2s;
@@ -246,9 +246,9 @@ section#bio .social {
   padding: 4px 8px 4px 6px;
   border: 1px solid rgba(73, 36, 64, 1);
   border-radius: 2px;
-  background-color: rgba(70, 48, 72, 1);
+  background-color: rgba(75, 48, 72, 1);
   margin: 0px 5px 5px 0px;
-  font-size: 13px;
+  font-size: 14px;
   cursor: pointer;
   box-shadow: inset 0px 1px 1px 0px rgba(255,255,255, 0.1);
   color: rgb(235, 235, 235);;

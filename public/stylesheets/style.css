@@ -59,6 +59,15 @@ header {
   80% { -webkit-transform: rotate(-30deg) translateY(0); opacity: 1; -webkit-transform-origin: top right; -webkit-animation-timing-function: ease-in-out; } 
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 header .name {
   position: absolute;
   top: 50px;
@@ -147,7 +156,7 @@ header #tagline {
   padding: 20px 0px 20px 0px;
   width: 100%;
   background-image: url('./img/aboutbg.png');
-  box-shadow: inset 1px 1px 0px 5000px rgba(128, 73, 114, 0.75);
+  box-shadow: inset 1px 1px 0px 5000px rgba(128, 73, 114, 0.85);
   margin-top: 40px;
   border-top: 2px solid rgba(104, 59, 93, 1);
   border-bottom: 2px solid rgba(104, 59, 93, 1);
@@ -199,6 +208,18 @@ section#bio .social {
   width: 32px;
   display: inline-block;
   margin-right: 5px;
+  border-radius: 32px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s, box-shadow 0.2s, -webkit-transform 0.2s;
+}
+
+.social-icon:hover {
+  -webkit-transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 1px 1px rgba(0,0,0, 0.2);
+}
+.social-icon:active {
+  -webkit-animation: rotate 0.3s ease-out;  
+  -webkit-transform: translate(0px, 0px);
 }
 
 .social-icon.twitter {
@@ -225,11 +246,19 @@ section#bio .social {
   padding: 4px 8px 4px 6px;
   border: 1px solid rgba(73, 36, 64, 1);
   border-radius: 2px;
-  background: rgba(80, 48, 72, 1);
+  background-color: rgba(70, 48, 72, 1);
   margin: 0px 5px 5px 0px;
-  font-size: 14px;
+  font-size: 13px;
+  cursor: pointer;
   box-shadow: inset 0px 1px 1px 0px rgba(255,255,255, 0.1);
   color: rgb(235, 235, 235);;
+  -webkit-transition: background-color 0.3s, box-shadow 0.2s, -webkit-transform 0.2s;
+}
+
+.buzzwords .words .word:hover {
+  background-color: rgba(63, 48, 72, 1);
+  box-shadow: 2px 2px 1px 1px rgba(0,0,0, 0.2);
+  -webkit-transform: translate(-2px, -2px);
 }
 
 .buzzwords .words .word .point {

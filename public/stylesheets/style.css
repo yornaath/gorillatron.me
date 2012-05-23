@@ -203,6 +203,10 @@ section#bio .social {
   width: 170px;
 }
 
+section#bio .social a {
+  display: inline-block;
+}
+
 .social-icon {
   height: 32px;
   width: 32px;

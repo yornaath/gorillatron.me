@@ -21,7 +21,7 @@ a {
 }
 
 html {
-  background-image: url('./img/bg.jpg');
+  //background-image: url('./img/bg.jpg');
   background-repeat: no-repeat;
   background-position: top center;
   background-color: rgb(162, 65, 49);

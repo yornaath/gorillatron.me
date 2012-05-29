@@ -1,0 +1,12 @@
+{
+  "name": "Critical Delete",
+  "createdAt": "Tue May 29 2012 22:41:41 GMT+0200 (CEST)",
+  "js": [
+    "wtwui-min.js",
+    "crit.js"
+  ],
+  "css": [
+    "wtwui.css",
+    "crit.css"
+  ]
+}

@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+
+
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  height: 25px;
+  width: 100%;
+  background-image: url('./img/aboutbg.png');
+  box-shadow: inset 1px 1px 0px 100px rgba(102, 56, 90, 0.88);
+  border-top: 2px solid rgba(70, 26, 50, 1);
+  text-align: center;
+  padding: 4px 0px 6px 0px;
+}
+
+footer .name {
+  font-family: "Oleo Script";
+  font-size: 22px;
+  color: whitesmoke;
+  margin: 0px auto 0px auto;
+}

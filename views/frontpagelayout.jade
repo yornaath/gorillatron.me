@@ -6,6 +6,7 @@ html
 
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js")
 
+
     script(src="/javascripts/index.js")
 
     script
@@ -19,6 +20,33 @@ html
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+
+    script(src="//ajax.cloudflare.com/cdn-cgi/nexp/cloudflare.js", async="true")
+    script  
+      var CloudFlare = CloudFlare || []
+      var censorshipConfig = {
+        "twitterHandle" : "", // Your Twitter handle; if not provided, your website domain will be used.
+        "position_x" : "right", // Badge position - right or left
+        "selector" : "p, h1, .censor_me", // Optional selector for elements to censor. Remove for default.
+        "regex" : ".{5}", //In case you like Regexes, and want to change the logic for how to black out text.
+        "persistent" : false //Make this true if you want the bars to appear on every page view, and not fade away when the box pops up.
+      }
+      var a= window.CloudFlare;
+      a.push({
+        paths:{
+          stop_censorship:"//ajax.cloudflare.com/cdn-cgi/nexp/apps/"
+        }
+      })
+      a.push(function(b,c) {
+        b(["stop_censorship"])
+        c("stop_censorship/config",function(){
+          return censorshipConfig
+        })
+      });
+      setTimeout(function() {
+        $('img.sopa_badge.cfcensorship_right').trigger('click')
+      }, 3500)
+  
 
     link(rel='stylesheet', href='/stylesheets/style.css')
     

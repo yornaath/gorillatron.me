@@ -6,8 +6,11 @@ var Article = require('../Article.js')
  */
 
 exports.index = function(req, res){
-  res.render('index', {
-    layout: 'frontpagelayout'
+  Article.all(function(err, articles) {
+    res.render('index', {
+      layout: 'frontpagelayout',
+      articles: JSON.stringify(articles)
+    })
   })
 };
 

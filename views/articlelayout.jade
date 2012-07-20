@@ -19,6 +19,7 @@ html
       })();
 
     link(rel='stylesheet', href='/stylesheets/article.css')
+    script(src='/javascripts/article.js')
 
     each stylesheet in css
       link(rel='stylesheet', href='/stylesheets/'+stylesheet)
@@ -28,5 +29,6 @@ html
     
   body!= body
     footer
-      div.name= "Gorillatron"
+      a(href="/")
+        div.name= "Gorillatron"
       
